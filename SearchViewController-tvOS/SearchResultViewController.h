@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SearchResultViewController.h
 //  SearchViewController-tvOS
 //
 //  Created by Keisuke_Tatsumi on 2015/12/04.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SearchResultViewController : UIViewController <UISearchResultsUpdating>
 
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
-

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SearchResultViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    
+    SearchResultViewController *searchResultViewController = [[SearchResultViewController alloc]init];
+    UISearchController *searchController = [[UISearchController alloc]initWithSearchResultsController:searchResultViewController];
+    searchController.searchResultsUpdater = searchResultViewController;
+    searchController.hidesNavigationBarDuringPresentation = NO;
+    searchController.searchBar.keyboardAppearance = UIKeyboardAppearanceDark;
+    searchController.searchBar.placeholder = @"";
+    searchController.view.backgroundColor = [UIColor blackColor];
+    searchResultViewController.tableView.tableHeaderView = searchController.searchBar;
+    UISearchContainerViewController *containerViewController = [[UISearchContainerViewController alloc]initWithSearchController:searchController];
+    containerViewController.title = @"Search";
+    UINavigationController *topNavigationController = [[UINavigationController alloc]initWithRootViewController:containerViewController];
+    topNavigationController.navigationBar.translucent = NO;
+    topNavigationController.navigationBar.barTintColor = [UIColor blackColor];
+    [topNavigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],
+                                                                    NSFontAttributeName : [UIFont fontWithName:@"HirakakuProN-W3" size:57]}];
+    self.window.rootViewController = topNavigationController;
+    [_window makeKeyAndVisible];
     return YES;
 }
 

@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		9FB2E8E31C10919C00F3ADDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E8E21C10919C00F3ADDC /* main.m */; };
 		9FB2E8E61C10919C00F3ADDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E8E51C10919C00F3ADDC /* AppDelegate.m */; };
-		9FB2E8E91C10919C00F3ADDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E8E81C10919C00F3ADDC /* ViewController.m */; };
-		9FB2E8EC1C10919C00F3ADDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2E8EA1C10919C00F3ADDC /* Main.storyboard */; };
 		9FB2E8EE1C10919C00F3ADDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2E8ED1C10919C00F3ADDC /* Assets.xcassets */; };
 		9FB2E8F91C10919C00F3ADDC /* SearchViewController_tvOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E8F81C10919C00F3ADDC /* SearchViewController_tvOSTests.m */; };
 		9FB2E9041C10919C00F3ADDC /* SearchViewController_tvOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E9031C10919C00F3ADDC /* SearchViewController_tvOSUITests.m */; };
+		9FB2E9131C1091F000F3ADDC /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2E9121C1091F000F3ADDC /* SearchResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 		9FB2E8E21C10919C00F3ADDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FB2E8E41C10919C00F3ADDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FB2E8E51C10919C00F3ADDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9FB2E8E71C10919C00F3ADDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9FB2E8E81C10919C00F3ADDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9FB2E8EB1C10919C00F3ADDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB2E8ED1C10919C00F3ADDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FB2E8EF1C10919C00F3ADDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FB2E8F41C10919C00F3ADDC /* SearchViewController-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SearchViewController-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +45,8 @@
 		9FB2E8FF1C10919C00F3ADDC /* SearchViewController-tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SearchViewController-tvOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB2E9031C10919C00F3ADDC /* SearchViewController_tvOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController_tvOSUITests.m; sourceTree = "<group>"; };
 		9FB2E9051C10919C00F3ADDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB2E9111C1091F000F3ADDC /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		9FB2E9121C1091F000F3ADDC /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +99,8 @@
 			children = (
 				9FB2E8E41C10919C00F3ADDC /* AppDelegate.h */,
 				9FB2E8E51C10919C00F3ADDC /* AppDelegate.m */,
-				9FB2E8E71C10919C00F3ADDC /* ViewController.h */,
-				9FB2E8E81C10919C00F3ADDC /* ViewController.m */,
-				9FB2E8EA1C10919C00F3ADDC /* Main.storyboard */,
+				9FB2E9111C1091F000F3ADDC /* SearchResultViewController.h */,
+				9FB2E9121C1091F000F3ADDC /* SearchResultViewController.m */,
 				9FB2E8ED1C10919C00F3ADDC /* Assets.xcassets */,
 				9FB2E8EF1C10919C00F3ADDC /* Info.plist */,
 				9FB2E8E11C10919C00F3ADDC /* Supporting Files */,
@@ -241,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB2E8EE1C10919C00F3ADDC /* Assets.xcassets in Resources */,
-				9FB2E8EC1C10919C00F3ADDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB2E8E91C10919C00F3ADDC /* ViewController.m in Sources */,
 				9FB2E8E61C10919C00F3ADDC /* AppDelegate.m in Sources */,
 				9FB2E8E31C10919C00F3ADDC /* main.m in Sources */,
+				9FB2E9131C1091F000F3ADDC /* SearchResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,17 +298,6 @@
 			targetProxy = 9FB2E9001C10919C00F3ADDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9FB2E8EA1C10919C00F3ADDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FB2E8EB1C10919C00F3ADDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9FB2E9061C10919C00F3ADDC /* Debug */ = {
